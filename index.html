@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thư Mời Tốt Nghiệp – Nam Nguyễn</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(ellipse at 50% 20%, #1a3055 0%, #050810 80%);
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    @media (min-width: 480px) {
+      body { align-items: center; padding: 32px 16px; }
+      .card { border-radius: 3px; }
+    }
+
+    /* ── CARD ── */
+    .card {
+      width: 100%;
+      max-width: 430px;
+      overflow: hidden;
+      box-shadow: 0 40px 100px rgba(0,0,0,.9), 0 10px 40px rgba(0,0,0,.6);
+    }
+
+    /* ── TOP CREAM ── */
+    .top {
+      background: #f4efe6;
+      padding: 22px 22px 24px;
+    }
+
+    /* Double-line gold frame */
+    .frame-outer {
+      border: 1px solid #c9a96e;
+      padding: 5px;
+      position: relative;
+    }
+
+    /* Corner diamond gems */
+    .gem {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: #f4efe6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8px;
+      color: #c9a96e;
+      z-index: 2;
+    }
+    .gem-tl { top: -6px; left: -6px; }
+    .gem-tr { top: -6px; right: -6px; }
+    .gem-bl { bottom: -6px; left: -6px; }
+    .gem-br { bottom: -6px; right: -6px; }
+
+    .frame-inner {
+      border: 1px solid rgba(201,169,110,.4);
+      padding: 22px 18px 26px;
+    }
+
+    /* ── HEADER ── */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+    }
+    .h-text {
+      font-size: 20px;
+      letter-spacing: 5px;
+      font-weight: 600;
+      color: #7a5a1a;
+      text-transform: uppercase;
+    }
+    .h-dot {
+      width: 5px;
+      height: 5px;
+      background: #c9a96e;
+      transform: rotate(45deg);
+      flex-shrink: 0;
+    }
+
+    /* ── GOLD RULE ── */
+    .rule {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 14px 0;
+    }
+    .rule-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, transparent, #c9a96e 25%, #c9a96e 75%, transparent);
+    }
+    .rule-gem { color: #c9a96e; font-size: 9px; }
+
+    /* ── OCCASION ── */
+    .occasion {
+      text-align: center;
+      font-size: 10px;
+      letter-spacing: 8px;
+      font-weight: 600;
+      color: #7a5a1a;
+      text-transform: uppercase;
+    }
+
+    /* ── NAME BLOCK ── */
+    .name-block { text-align: center; }
+
+    .badge {
+      display: inline-block;
+      background: #162848;
+      color: #c9a96e;
+      font-size: 6.5px;
+      letter-spacing: 4px;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 4px 16px 5px;
+      margin-bottom: 30px;
+    }
+
+    .name {
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(52px, 13.5vw, 68px);
+      color: #162848;
+      display: block;
+      line-height: 1.05;
+      white-space: nowrap;
+    }
+
+    /* ── TAGLINE ── */
+    .tagline {
+      text-align: center;
+      font-size: 14.5px;
+      letter-spacing: 2.5px;
+      color: #7a5a1a;
+      text-transform: uppercase;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    .honor {
+  text-align: center;
+  font-style: italic;
+  font-size: 10px;
+  color: #8a6420;
+  margin-top: 16px;
+  letter-spacing: 0.35px;
+  line-height: 1.8;
+  animation: honorGlow 4s ease-in-out infinite;
+  transition: all .3s ease;
+}
+
+    /* ── SCALLOP ── */
+    .scallop { line-height: 0; background: #f4efe6; }
+    .scallop svg { display: block; width: 100%; }
+
+    /* ── BOTTOM DARK ── */
+    .bottom {
+      background: #162848;
+      padding: 0 24px 28px;
+    }
+
+    /* Photo */
+    .photo-wrap {
+      display: flex;
+      justify-content: center;
+      padding-top: 22px;
+      margin-bottom: 18px;
+    }
+
+    .photo-ring {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      padding: 4px;
+      background: conic-gradient(
+        #c9a96e 0deg, #f5e090 60deg, #c9a96e 120deg,
+        #e8c878 180deg, #c9a96e 240deg, #f5e090 300deg, #c9a96e 360deg
+      );
+      box-shadow:
+        0 0 0 8px rgba(201,169,110,.08),
+        0 0 0 16px rgba(201,169,110,.04),
+        0 16px 48px rgba(0,0,0,.55);
+    }
+
+    .photo-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      overflow: hidden;
+      background: #1e3a6a;
+    }
+
+    .photo-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+
+    /* Monogram seal */
+    .seal-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+
+    .seal {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      border: 1px solid rgba(201,169,110,.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .seal::after {
+      content: '';
+      position: absolute;
+      inset: 5px;
+      border-radius: 50%;
+      border: 1px solid rgba(201,169,110,.2);
+    }
+    .seal-mono {
+      font-family: 'Great Vibes', cursive;
+      font-size: 32px;
+      color: rgba(201,169,110,.75);
+      z-index: 1;
+    }
+
+    /* Info */
+    .info-bar {
+      border-top: 1px solid rgba(201,169,110,.2);
+      padding-top: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .info-label {
+      font-size: 12.5px;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      color: #c9a96e;
+      font-weight: 600;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .info-label i {
+      font-size: 11px;
+      letter-spacing: 0;
+    }
+    .info-right .info-label {
+      justify-content: flex-end;
+    }
+
+    .info-value {
+      color: #d4c098;
+      font-size: 13.5px;
+      line-height: 2;
+      font-weight: 300;
+    }
+
+    .info-right { text-align: right; }
+
+    /* Map */
+    .map-frame{
+      position: relative;
+      margin-bottom: 18px;
+      border: 1px solid #c9a96e;
+      padding: 5px;
+      box-shadow: 0 0 0 4px rgba(201,169,110,.08), 0 6px 24px rgba(0,0,0,.5);
+    }
+    .map-gem{
+      position: absolute;
+      width: 12px; height: 12px;
+      background: #162848;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 8px; color: #c9a96e; z-index: 2;
+    }
+    .map-gem-tl{ top:-6px; left:-6px; }
+    .map-gem-tr{ top:-6px; right:-6px; }
+    .map-gem-bl{ bottom:-6px; left:-6px; }
+    .map-gem-br{ bottom:-6px; right:-6px; }
+    .map-wrap {
+      border: 1px solid rgba(201,169,110,.35);
+      overflow: hidden;
+      position: relative;
+    }
+    .map-wrap::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      box-shadow: inset 0 0 0 1px rgba(255,235,180,.1);
+    }
+    .map-wrap iframe {
+      display: block;
+      width: 100%;
+      height: 160px;
+      border: none;
+      filter: grayscale(30%) contrast(1.05);
+    }
+    .badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #162848;
+  color: #c9a96e;
+  font-size: 9px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 7px 22px 8px;
+  margin-bottom: 30px;
+  margin-top: 12px;
+}
+
+.sparkle{
+  font-size: 11px;
+  color: #f7de88;
+  text-shadow:
+    0 0 4px rgba(255,230,150,.8),
+    0 0 10px rgba(255,220,120,.6);
+  animation: twinkle 1.6s infinite ease-in-out;
+}
+
+.sparkle.right{
+  animation-delay: .8s;
+}
+
+@keyframes twinkle{
+  0%,100%{
+    transform: scale(1) rotate(0deg);
+    opacity: .7;
+  }
+  50%{
+    transform: scale(1.35) rotate(18deg);
+    opacity: 1;
+  }
+}
+@keyframes honorGlow{
+  0%,100%{
+    opacity: .78;
+    transform: translateY(0px);
+    text-shadow: 0 0 0 rgba(201,169,110,0);
+  }
+
+  50%{
+    opacity: 1;
+    transform: translateY(-2px);
+    text-shadow:
+      0 0 6px rgba(201,169,110,.28),
+      0 0 12px rgba(201,169,110,.12);
+  }
+}
+/* THÊM VÀO CUỐI <style> */
+  .gift-note{
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(201,169,110,.18);
+  text-align: center;
+  font-size: 10px;
+  color: #d6b36b;
+  font-style: italic;
+  line-height: 1.8;
+  letter-spacing: .25px;
+  animation: giftGlow 3s ease-in-out infinite;
+}
+
+@keyframes giftGlow{
+  0%,100%{ opacity:.75; text-shadow:none; transform:translateY(0); }
+  50%{ opacity:1; text-shadow:0 0 8px rgba(201,169,110,.28),0 0 14px rgba(201,169,110,.12); transform:translateY(-1px); }
+}
+
+/* WEATHER */
+.weather-wrap{
+  margin-top: 20px;
+  border: 1px solid rgba(201,169,110,.25);
+  padding: 16px;
+  position: relative;
+}
+.weather-wrap::before{
+  content: 'THỜI TIẾT · 17/05/2026';
+  position: absolute;
+  top: -7px; left: 50%;
+  transform: translateX(-50%);
+  background: #162848;
+  padding: 0 10px;
+  font-size: 11.5px;
+  letter-spacing: 3px;
+  color: #c9a96e;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.weather-top{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.weather-icon{ font-size: 28px; line-height: 1; }
+.weather-info{ flex: 1; }
+.weather-temp{
+  font-size: 22px; font-weight: 700;
+  color: #f5e090; letter-spacing: 1px;
+}
+.weather-desc{
+  font-size: 13px; color: #d4c098;
+  margin-top: 3px; letter-spacing: .5px;
+}
+.weather-stats{
+  display: flex; flex-direction: column; gap: 4px; align-items: flex-end;
+}
+.weather-stat{
+  font-size: 13px; color: #c9a96e;
+  letter-spacing: 1px;
+}
+.weather-divider{
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(201,169,110,.3), transparent);
+  margin-bottom: 12px;
+}
+.weather-tips-title{
+  font-size: 12px; letter-spacing: 3px; text-transform: uppercase;
+  color: #c9a96e; font-weight: 600; margin-bottom: 10px;
+}
+.weather-tips{ display: flex; flex-direction: column; gap: 7px; }
+.weather-tip{
+  font-size: 14px; color: #d4c098;
+  letter-spacing: .3px; line-height: 1.5;
+}
+.weather-note{
+  margin-top: 12px;
+  font-size: 12px; color: rgba(201,169,110,.4);
+  font-style: italic; letter-spacing: .5px;
+  text-align: right;
+}
+
+/* PHOTO WIGGLE */
+@keyframes photoWiggle{
+  0%,100%{ transform: rotate(0deg); }
+  20%{ transform: rotate(-4deg) scale(1.03); }
+  40%{ transform: rotate(4deg) scale(1.03); }
+  60%{ transform: rotate(-3deg); }
+  80%{ transform: rotate(3deg); }
+}
+.photo-ring{
+  animation: photoWiggle 2.5s ease-in-out infinite;
+}
+.photo-ring.stop-wiggle{
+  animation: none;
+}
+
+/* PHOTO HINT */
+.photo-hint{
+  text-align: center;
+  font-size: 10px;
+  color: rgba(201,169,110,.7);
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+  animation: hintPulse 2s ease-in-out infinite;
+  transition: opacity .5s;
+}
+.photo-hint.hidden{ opacity: 0; pointer-events: none; }
+@keyframes hintPulse{
+  0%,100%{ opacity:.5; } 50%{ opacity:1; }
+}
+
+/* SCROLL HINT */
+.scroll-hint{
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  pointer-events: none;
+  transition: opacity .6s;
+}
+.scroll-hint.hidden{ opacity: 0; }
+.scroll-hint-label{
+  background: rgba(22,40,72,.9);
+  border: 1px solid rgba(201,169,110,.6);
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  color: #c9a96e;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  white-space: nowrap;
+  box-shadow: 0 4px 20px rgba(0,0,0,.5);
+}
+.scroll-hint-chevron{
+  width: 26px; height: 26px;
+  border-right: 3px solid #c9a96e;
+  border-bottom: 3px solid #c9a96e;
+  border-radius: 2px;
+  animation: chevronBounce 1s ease-in-out infinite;
+}
+@media (max-width: 479px){
+  .scroll-hint{ bottom: 140px; }
+}
+@keyframes chevronBounce{
+  0%,100%{ transform: rotate(45deg) translateY(0); opacity:1; }
+  50%{ transform: rotate(45deg) translateY(8px); opacity:.5; }
+}
+
+/* LOTTERY */
+.gift-box-btn{
+  display:block; margin:14px auto 0;
+  background:none; border:none; cursor:pointer;
+  font-size:42px; line-height:1;
+  animation: boxBounce 1s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px rgba(201,169,110,.5));
+}
+.gift-box-btn:disabled{ animation:none; opacity:.4; cursor:not-allowed; }
+@keyframes boxBounce{
+  0%,100%{ transform:translateY(0) scale(1); }
+  40%{ transform:translateY(-10px) scale(1.08); }
+  60%{ transform:translateY(-6px) scale(1.04); }
+}
+.lt-result{
+  margin-top:10px;
+  font-size:11px; letter-spacing:2px; color:#c9a96e;
+  min-height:18px; text-align:center;
+  font-weight:600; text-transform:uppercase;
+}
+
+/* POPUP */
+.lt-popup{
+  display:none; position:fixed; inset:0; z-index:1200;
+  background:rgba(5,8,16,.82); backdrop-filter:blur(6px);
+  align-items:center; justify-content:center; padding:24px;
+}
+.lt-popup.open{ display:flex; }
+.lt-popup-card{
+  width:100%; max-width:340px;
+  background:#0e1e38;
+  border:1px solid rgba(201,169,110,.4);
+  border-radius:4px;
+  padding:32px 24px 28px;
+  text-align:center;
+  box-shadow:0 24px 80px rgba(0,0,0,.8);
+  animation:popIn .35s cubic-bezier(.34,1.56,.64,1);
+}
+@keyframes popIn{
+  from{ transform:scale(.7); opacity:0; }
+  to{ transform:scale(1); opacity:1; }
+}
+.lt-popup-num{
+  font-family:'Montserrat',sans-serif;
+  font-size:72px; font-weight:700;
+  color:#f5e090;
+  line-height:1;
+  text-shadow:0 0 30px rgba(245,224,144,.4);
+  margin:8px 0 16px;
+}
+.lt-popup-congrats{
+  font-family:'Great Vibes',cursive;
+  font-size:26px; color:#c9a96e;
+  margin-bottom:14px;
+}
+.lt-popup-msg{
+  font-size:11px; color:#d4c098;
+  line-height:1.9; letter-spacing:.3px;
+  font-weight:300;
+}
+.lt-popup-msg strong{ color:#f5e090; font-weight:600; }
+.lt-popup-close{
+  margin-top:22px;
+  background:linear-gradient(135deg,#c9a96e,#e8c050,#c9a96e);
+  border:none; border-radius:3px;
+  padding:10px 28px;
+  font-family:'Montserrat',sans-serif;
+  font-size:10px; font-weight:700; letter-spacing:3px;
+  color:#0e1e38; cursor:pointer; text-transform:uppercase;
+}
+  </style>
+</head>
+<body>
+  <div class="card">
+
+    <!-- TOP CREAM -->
+    <div class="top">
+      <div class="frame-outer">
+        <span class="gem gem-tl">◆</span>
+        <span class="gem gem-tr">◆</span>
+        <span class="gem gem-bl">◆</span>
+        <span class="gem gem-br">◆</span>
+
+        <div class="frame-inner">
+
+          <div class="header">
+            <span class="h-text">Thư Mời</span>
+            <div class="h-dot"></div>
+            <span class="h-text">Tham Dự</span>
+          </div>
+
+          <div class="rule">
+            <div class="rule-line"></div>
+            <span class="rule-gem">◆</span>
+            <div class="rule-line"></div>
+          </div>
+
+          <div class="occasion">Lễ Tốt Nghiệp</div>
+
+          <div class="name-block">
+            <div class="badge">
+              <span class="sparkle left">✦</span>
+              Kỹ Sư AiTi
+              <span class="sparkle right">✦</span>
+            </div>
+            <span class="name">Nam Nguyễn</span>
+          </div>
+
+          <div class="rule">
+            <div class="rule-line"></div>
+            <span class="rule-gem">◆</span>
+            <div class="rule-line"></div>
+          </div>
+
+          <div class="tagline">
+            Chính thức gia nhập<br>
+            Thị trường lao động
+          </div>
+
+          <div class="honor">
+            "Sự hiện diện của mọi người là niềm vinh dự và động lực lớn lao đối với tôi trong chặng đường mới. Kính mời mọi người đến chia sẻ niềm vui trong lễ tốt nghiệp."
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- SCALLOP -->
+    <div class="scallop">
+      <svg viewBox="0 0 430 28" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="
+          M0,0 Q10.75,28 21.5,0 Q32.25,28 43,0 Q53.75,28 64.5,0 Q75.25,28 86,0
+          Q96.75,28 107.5,0 Q118.25,28 129,0 Q139.75,28 150.5,0 Q161.25,28 172,0
+          Q182.75,28 193.5,0 Q204.25,28 215,0 Q225.75,28 236.5,0 Q247.25,28 258,0
+          Q268.75,28 279.5,0 Q290.25,28 301,0 Q311.75,28 322.5,0 Q333.25,28 344,0
+          Q354.75,28 365.5,0 Q376.25,28 387,0 Q397.75,28 408.5,0 Q419.25,28 430,0
+          L430,28 L0,28 Z
+        " fill="#162848"/>
+      </svg>
+    </div>
+
+    <!-- BOTTOM DARK -->
+    <div class="bottom">
+
+
+      <div class="seal-wrap">
+        <div class="seal">
+          <span class="seal-mono">NN</span>
+        </div>
+      </div>
+
+      <div class="map-frame">
+        <span class="map-gem map-gem-tl">◆</span>
+        <span class="map-gem map-gem-tr">◆</span>
+        <span class="map-gem map-gem-bl">◆</span>
+        <span class="map-gem map-gem-br">◆</span>
+        <div class="map-wrap">
+          <iframe
+            src="https://maps.google.com/maps?q=Trường+Đại+học+Kiến+trúc+Hà+Nội,+129+Trần+Phú,+Hà+Đông,+Hà+Nội&output=embed&hl=vi&z=16"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="info-bar">
+        <div class="info-left">
+          <div class="info-label"><i class="fa-regular fa-clock"></i> Thời Gian</div>
+          <div class="info-value">Giờ: 10:00<br>Chủ Nhật<br>17 / 05 / 2026</div>
+        </div>
+        <div class="info-right">
+          <div class="info-label">
+            <i class="fa-solid fa-location-dot"></i> Địa Điểm
+          </div>
+          <div class="info-value">
+            HAU, 129 Đ. Trần Phú<br>
+            Phường Hà Đông<br>
+            Hà Nội
+          </div>
+        </div>
+      </div>
+      <!-- WEATHER -->
+      <div class="weather-wrap">
+        <div class="weather-top">
+          <div class="weather-icon" id="w-icon">⏳</div>
+          <div class="weather-info">
+            <div class="weather-temp" id="w-temp">Đang tải...</div>
+            <div class="weather-desc" id="w-desc"></div>
+          </div>
+          <div class="weather-stats">
+            <div class="weather-stat" id="w-rain"></div>
+            <div class="weather-stat" id="w-uv"></div>
+          </div>
+        </div>
+        <div class="weather-divider"></div>
+        <div class="weather-tips-title">Lưu ý khi tham dự</div>
+        <div class="weather-tips" id="w-tips"></div>
+        <div class="weather-note" id="w-note"></div>
+      </div>
+
+      <div class="gift-note">
+  ✨ Một món quà nhỏ đã được chuẩn bị dành riêng cho người tham dự.
+  <button class="gift-box-btn" id="lt-btn" title="Bấm để rút quà">🎁</button>
+  <div class="lt-result" id="lt-result"></div>
+</div>
+
+<!-- LUCKY POPUP -->
+<div class="lt-popup" id="lt-popup">
+  <div class="lt-popup-card">
+    <div class="lt-popup-congrats">Chúc Mừng!</div>
+    <div class="lt-popup-num" id="lt-popup-num">1</div>
+    <div class="rule"><div class="rule-line"></div><span class="rule-gem">◆</span><div class="rule-line"></div></div>
+    <p class="lt-popup-msg">
+      Bạn đã có số may mắn <strong id="lt-popup-num2">1</strong> 🎁<br><br>
+      Vui lòng đến dự lễ tốt nghiệp để được nhận phần quà từ <strong>Nam Nguyễn</strong> 🎓<br><br>
+      📢 Khi đến nơi, hãy nói con số <strong id="lt-popup-num3">1</strong> này với <strong>Nam Nguyễn</strong> để nhận quà nhé!
+    </p>
+    <button class="lt-popup-close" id="lt-popup-close">Đóng</button>
+  </div>
+</div>
+    </div>
+  </div>
+
+  <audio id="bgm" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="music-btn" style="
+    position: fixed; bottom: 20px; right: 16px; z-index: 1000;
+    width: 48px; height: 48px; border-radius: 50%;
+    border: 2px solid #c9a96e; background: #162848;
+    color: #c9a96e; font-size: 22px; cursor: pointer;
+    display: none; align-items: center; justify-content: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,.5);
+  " title="Nhạc">🎵</button>
+
+<div class="scroll-hint" id="scroll-hint">
+  <span class="scroll-hint-label">↓ Kéo xuống để thấy điều bất ngờ</span>
+  <div class="scroll-hint-chevron"></div>
+</div>
+
+<canvas id="confetti" style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:999;"></canvas>
+  <script>
+  (function () {
+    var c = document.getElementById('confetti');
+    var ctx = c.getContext('2d');
+
+    function resize() { c.width = innerWidth; c.height = innerHeight; }
+    resize();
+    window.addEventListener('resize', resize);
+
+    var GOLDS = ['#c9a96e','#f0d890','#e8c050','#d4a850','#f5e8a0'];
+    var OTHERS = ['#f4efe6','#162848'];
+
+    function Particle(scatter) {
+      this.reset(scatter);
+    }
+
+    Particle.prototype.reset = function (scatter) {
+      this.x = Math.random() * c.width;
+      this.y = scatter ? Math.random() * c.height : Math.random() * -300 - 10;
+      this.vy = 1.2 + Math.random() * 2.2;
+      this.vx = (Math.random() - 0.5) * 0.6;
+      this.rot = Math.random() * Math.PI * 2;
+      this.drot = (Math.random() - 0.5) * 0.07;
+      this.w = 7 + Math.random() * 9;
+      this.h = 3 + Math.random() * 5;
+      this.alpha = 0.5 + Math.random() * 0.5;
+      this.swing = Math.random() * Math.PI * 2;
+      this.swingSpd = 0.018 + Math.random() * 0.022;
+      var r = Math.random();
+      this.type = r < 0.15 ? 'cap' : (r < 0.38 ? 'dot' : 'rect');
+      this.color = Math.random() < 0.72
+        ? GOLDS[Math.floor(Math.random() * GOLDS.length)]
+        : OTHERS[Math.floor(Math.random() * OTHERS.length)];
+    };
+
+    Particle.prototype.step = function (t) {
+      this.y += this.vy;
+      this.x += this.vx + Math.sin(this.swing + t * this.swingSpd) * 0.55;
+      this.rot += this.drot;
+      if (this.y > c.height + 30) this.reset(false);
+    };
+
+    Particle.prototype.draw = function () {
+      ctx.save();
+      ctx.globalAlpha = this.alpha;
+      ctx.translate(this.x, this.y);
+      if (this.type === 'cap') {
+        ctx.font = (this.w * 2.4) + 'px serif';
+        ctx.fillText('🎓', -this.w * 0.9, this.w * 0.6);
+      } else {
+        ctx.rotate(this.rot);
+        ctx.fillStyle = this.color;
+        if (this.type === 'dot') {
+          ctx.beginPath();
+          ctx.arc(0, 0, this.w * 0.42, 0, Math.PI * 2);
+          ctx.fill();
+        } else {
+          ctx.fillRect(-this.w / 2, -this.h / 2, this.w, this.h);
+        }
+      }
+      ctx.restore();
+    };
+
+    var particles = [];
+    for (var i = 0; i < 60; i++) particles.push(new Particle(true));
+
+    var t = 0;
+    (function loop() {
+      ctx.clearRect(0, 0, c.width, c.height);
+      for (var i = 0; i < particles.length; i++) {
+        particles[i].step(t);
+        particles[i].draw();
+      }
+      t++;
+      requestAnimationFrame(loop);
+    })();
+  })();
+
+  // WEATHER
+  (function () {
+    var WMO = {
+      0:'☀️ Trời quang',1:'🌤️ Ít mây',2:'⛅ Có mây',3:'☁️ Nhiều mây',
+      45:'🌫️ Sương mù',48:'🌫️ Sương mù',
+      51:'🌦️ Mưa phùn nhẹ',53:'🌦️ Mưa phùn',55:'🌧️ Mưa phùn dày',
+      61:'🌧️ Mưa nhẹ',63:'🌧️ Mưa vừa',65:'🌧️ Mưa to',
+      80:'🌦️ Mưa rào nhẹ',81:'🌦️ Mưa rào',82:'⛈️ Mưa rào to',
+      95:'⛈️ Giông bão',96:'⛈️ Giông có mưa đá',99:'⛈️ Giông mưa đá lớn'
+    };
+
+    function getTips(code, tmax) {
+      var tips = ['👔 Mặc trang phục nhẹ, thoáng mát'];
+      if (tmax >= 32) { tips.push('🧴 Thoa kem chống nắng SPF 50+'); tips.push('💧 Uống đủ nước, tránh nắng gắt'); }
+      if ([61,63,65,80,81,82,95,96,99,51,53,55].indexOf(code) > -1) tips.push('☂️ Nhớ mang theo ô');
+      else tips.push('🕶️ Mang kính râm chống UV');
+      if (tmax >= 34) tips.push('🚗 Ưu tiên đi xe có điều hoà');
+      return tips;
+    }
+
+    function renderFallback() {
+      document.getElementById('w-icon').textContent = '☀️🌦️';
+      document.getElementById('w-temp').textContent = '28° – 34°C';
+      document.getElementById('w-desc').textContent = 'Nắng nóng, có thể có mưa rào chiều';
+      document.getElementById('w-rain').textContent = '💧 Mưa: ~60%';
+      document.getElementById('w-uv').textContent = '🔆 UV: Cao';
+      var tips = getTips(81, 34);
+      document.getElementById('w-tips').innerHTML = tips.map(function(t){ return '<div class="weather-tip">'+t+'</div>'; }).join('');
+      document.getElementById('w-note').textContent = '* Khí hậu TB tháng 5 · Tự cập nhật khi đến gần ngày';
+    }
+
+    fetch('https://api.open-meteo.com/v1/forecast?latitude=20.9257&longitude=105.8412&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max,weathercode&timezone=Asia%2FBangkok&start_date=2026-05-17&end_date=2026-05-17')
+      .then(function(r){ if (!r.ok) throw new Error('out-of-range'); return r.json(); })
+      .then(function(data) {
+        if (!data.daily || !data.daily.temperature_2m_max || data.daily.temperature_2m_max[0] == null) {
+          renderFallback(); return;
+        }
+        var tmax  = Math.round(data.daily.temperature_2m_max[0]);
+        var tmin  = Math.round(data.daily.temperature_2m_min[0]);
+        var rain  = data.daily.precipitation_probability_max[0];
+        var code  = data.daily.weathercode[0];
+        var desc  = WMO[code] || '🌡️ Nhiều mây';
+
+        document.getElementById('w-icon').textContent = desc.split(' ')[0];
+        document.getElementById('w-temp').textContent = tmin + '° – ' + tmax + '°C';
+        document.getElementById('w-desc').textContent = desc.replace(/^\S+\s/, '');
+        document.getElementById('w-rain').textContent = '💧 Mưa: ' + rain + '%';
+        document.getElementById('w-uv').textContent = tmax >= 32 ? '🔆 UV: Cao' : '🔆 UV: Trung bình';
+
+        var tips = getTips(code, tmax);
+        document.getElementById('w-tips').innerHTML = tips.map(function(t){ return '<div class="weather-tip">'+t+'</div>'; }).join('');
+        document.getElementById('w-note').textContent = '✓ Dự báo thực từ Open-Meteo · Cập nhật tự động';
+      })
+      .catch(renderFallback);
+  })();
+
+  // SCROLL HINT
+  (function () {
+    var hint = document.getElementById('scroll-hint');
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 40) hint.classList.add('hidden');
+    }, { passive: true });
+  })();
+
+  // LOTTERY
+  (function () {
+    var btn      = document.getElementById('lt-btn');
+    var result   = document.getElementById('lt-result');
+    var popup    = document.getElementById('lt-popup');
+    var popNum   = document.getElementById('lt-popup-num');
+    var popNum2  = document.getElementById('lt-popup-num2');
+    var popClose = document.getElementById('lt-popup-close');
+
+    // Nếu thiết bị này đã rút rồi → khóa luôn
+    var myNum = localStorage.getItem('lt_my_number');
+    if (myNum) {
+      btn.disabled = true;
+      result.textContent = '✦ Số của bạn: ' + myNum + ' ✦';
+    }
+
+    // Lấy pool đã rút từ server/localStorage (chỉ tránh trùng trên cùng thiết bị quản lý)
+    function getPool() {
+      var used = JSON.parse(localStorage.getItem('lt_used') || '[]');
+      var pool = [];
+      for (var i = 1; i <= 24; i++) {
+        if (used.indexOf(i) === -1) pool.push(i);
+      }
+      return pool;
+    }
+
+    btn.addEventListener('click', function () {
+      if (btn.disabled) return;
+      var pool = getPool();
+      if (pool.length === 0) {
+        result.textContent = '🎉 Đã rút hết 24 phần quà';
+        btn.disabled = true;
+        return;
+      }
+
+      var winner = pool[Math.floor(Math.random() * pool.length)];
+
+      // Lưu số đã rút và khóa thiết bị này
+      var used = JSON.parse(localStorage.getItem('lt_used') || '[]');
+      used.push(winner);
+      localStorage.setItem('lt_used', JSON.stringify(used));
+      localStorage.setItem('lt_my_number', winner);
+
+      popNum.textContent  = winner;
+      popNum2.textContent = winner;
+      var popNum3 = document.getElementById('lt-popup-num3');
+      if (popNum3) popNum3.textContent = winner;
+      popup.classList.add('open');
+
+      btn.disabled = true;
+      result.textContent = '✦ Số của bạn: ' + winner + ' ✦';
+    });
+
+    popClose.addEventListener('click', function () { popup.classList.remove('open'); });
+    popup.addEventListener('click', function (e) {
+      if (e.target === popup) popup.classList.remove('open');
+    });
+  })();
+
+  (function () {
+    var audio = document.getElementById('bgm');
+    var btn   = document.getElementById('music-btn');
+    var muted = false;
+
+    var photoHint = document.getElementById('photo-hint');
+    if (photoHint) photoHint.classList.add('hidden');
+
+    var photo = document.querySelector('.photo-ring');
+    btn.style.display = 'flex';
+    audio.volume = 0.7;
+
+    // Trick: bắt đầu muted (Chrome cho phép), rồi unmute ngay
+    audio.muted = true;
+    audio.play().then(function () {
+      audio.muted = false;
+      if (photo) photo.classList.add('stop-wiggle');
+      if (photoHint) photoHint.classList.add('hidden');
+    }).catch(function () {
+      // Fallback: click vào ảnh để phát
+      audio.muted = false;
+      if (photo) {
+        photo.style.cursor = 'pointer';
+        photo.addEventListener('click', function () {
+          audio.play().catch(function () {});
+          photo.classList.add('stop-wiggle');
+          if (photoHint) photoHint.classList.add('hidden');
+        }, { once: true });
+      }
+    });
+
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      muted = !muted;
+      audio.muted = muted;
+      btn.textContent = muted ? '🔇' : '🎵';
+    });
+  })();
+
+  </script>
+</body>
+</html>
