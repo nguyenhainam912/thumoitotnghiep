@@ -977,35 +977,26 @@
     var btn   = document.getElementById('music-btn');
     var muted = false;
 
-    var photoHint = document.getElementById('photo-hint');
-    if (photoHint) photoHint.classList.add('hidden');
-
-    var photo = document.querySelector('.photo-ring');
     btn.style.display = 'flex';
     audio.volume = 0.7;
 
-    function startMusic() {
-      audio.muted = true;
-      audio.play().then(function () {
-        audio.muted = false;
-      }).catch(function () {});
+    function playAudio() {
+      audio.play().catch(function () {});
     }
 
-    // Thử autoplay ngay
-    startMusic();
+    // Thử autoplay ngay (localhost thường cho phép)
+    playAudio();
 
-    // Phát khi người dùng tương tác lần đầu (scroll, click, touch)
-    function onFirstInteraction() {
-      if (audio.paused || audio.muted) {
-        audio.muted = false;
-        audio.play().catch(function () {});
-      }
-      ['click', 'scroll', 'touchstart', 'keydown'].forEach(function (e) {
-        document.removeEventListener(e, onFirstInteraction);
+    // Fallback: phát khi người dùng tương tác lần đầu
+    var events = ['click', 'scroll', 'touchstart', 'keydown'];
+    function onInteraction() {
+      if (audio.paused) playAudio();
+      events.forEach(function (e) {
+        document.removeEventListener(e, onInteraction);
       });
     }
-    ['click', 'scroll', 'touchstart', 'keydown'].forEach(function (e) {
-      document.addEventListener(e, onFirstInteraction, { passive: true });
+    events.forEach(function (e) {
+      document.addEventListener(e, onInteraction, { passive: true });
     });
 
     btn.addEventListener('click', function (e) {
